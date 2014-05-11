@@ -41,7 +41,7 @@
 	</div> 
 	<?php endif; ?> */ -->
 
-	<header id="masthead" class="site-header" style="background-color: #fff; border-bottom: 1px solid #ccc;" role="banner">
+	<header id="masthead" class="site-header" style="background-color: #f0f0f0; border-bottom: 0px solid #dfdfdf;" role="banner">
 		<div class="header-main" style="background: url('<?php header_image(); ?>') no-repeat; background-position:6px 8px;">
 			<h1 class="site-title">
                             <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
