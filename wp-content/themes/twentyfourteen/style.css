@@ -67,7 +67,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 	font-size: 100%;
 	font-style: inherit;
 	font-weight: inherit;
-	margin: 0;
+	margin: auto;
 	outline: 0;
 	padding: 0;
 	vertical-align: baseline;
@@ -104,19 +104,20 @@ button,
 input,
 select,
 textarea {
-	color: #2b2b2b;
+	color: #444;
 	font-family: Lato, sans-serif;
-	font-size: 16px;
-	font-weight: 400;
+	font-size: 17px;
+	font-weight: 300;
 	line-height: 1.5;
 }
 
 body {
 	background: #f5f5f5;
+        margin: auto;
 }
 
 a {
-	color: #24890d;
+	color: #2161AD;
 	text-decoration: none;
 }
 
@@ -131,7 +132,7 @@ a:active {
 
 a:active,
 a:hover {
-	color: #41a62a;
+	color: #fa4305;
 }
 
 h1,
@@ -1024,7 +1025,7 @@ span + .edit-link:before,
 .site-content .entry-meta,
 .page-content {
 	margin: 0 auto;
-	max-width: 474px;
+	max-width: 640px;
 }
 
 .page-content {
@@ -1776,20 +1777,20 @@ a.post-thumbnail:hover {
 
 .comments-area {
 	margin: 48px auto;
-	max-width: 474px;
+	max-width: 600px;
 	padding: 0 10px;
 }
 
 .comment-reply-title,
 .comments-title {
-	font: 900 16px/1.5 Lato, sans-serif;
+	font: 600 16px/1.5 Lato, sans-serif;
 	margin: 0;
 	text-transform: uppercase;
 }
 
 .comment-list {
 	list-style: none;
-	margin: 0 0 48px 0;
+	margin: 0 0 24px 0;
 }
 
 .comment-author {
@@ -1800,12 +1801,12 @@ a.post-thumbnail:hover {
 .comment-list .reply,
 .comment-metadata {
 	font-size: 12px;
-	line-height: 2;
+	line-height: 1.5;
 	text-transform: uppercase;
 }
 
 .comment-list .reply {
-	margin-top: 24px;
+	margin-top: 12px;
 }
 
 .comment-author .fn {
@@ -1833,8 +1834,8 @@ a.post-thumbnail:hover {
 .comment-list .pingback,
 .comment-list .trackback {
 	border-top: 1px solid rgba(0, 0, 0, 0.1);
-	margin-bottom: 24px;
-	padding-top: 24px;
+	margin-bottom: 12px;
+	padding-top: 12px;
 }
 
 .comment-list > li:first-child > article,
@@ -1900,7 +1901,7 @@ a.post-thumbnail:hover {
 
 .comment-content ul,
 .comment-content ol {
-	margin: 0 0 24px 22px;
+	margin: 0 0 12px 22px;
 }
 
 .comment-content li > ul,
@@ -1918,17 +1919,17 @@ a.post-thumbnail:hover {
 }
 
 .comment-respond {
-	margin-bottom: 24px;
+	margin-bottom: 12px;
 	padding: 0;
 }
 
 .comment .comment-respond {
-	margin-top: 24px;
+	margin-top: 12px;
 }
 
 .comment-respond h3 {
 	margin-top: 0;
-	margin-bottom: 24px;
+	margin-bottom: 12px;
 }
 
 .comment-notes,
@@ -1943,7 +1944,7 @@ a.post-thumbnail:hover {
 .comment-notes,
 .comment-awaiting-moderation,
 .logged-in-as {
-	font-size: 14px;
+	font-size: 12px;
 	line-height: 1.7142857142;
 }
 
@@ -1951,7 +1952,7 @@ a.post-thumbnail:hover {
 	font-size: 16px;
 	font-weight: 900;
 	line-height: 1.5;
-	margin-top: 24px;
+	margin-top: 12px;
 	text-transform: uppercase;
 }
 
@@ -2917,7 +2918,7 @@ a.post-thumbnail:hover {
 
 .site-main .widecolumn {
 	padding-top: 72px;
-	width: auto;
+	width: auto;        
 }
 .site-main .mu_register,
 .widecolumn > h2,
@@ -3369,6 +3370,7 @@ a.post-thumbnail:hover {
 		height: 48px;
 		line-height: 48px;
 		position: relative;
+                font-weight: bold;                
 	}
 
 	.primary-navigation a {
@@ -3378,7 +3380,8 @@ a.post-thumbnail:hover {
 	}
 
 	.primary-navigation ul ul {
-		background-color: #24890d;
+		background-color: #a1a1a1;
+                box-shadow: 0 2px 2px rgba(0, 0, 0, 0.45);
 		float: left;
 		margin: 0;
 		position: absolute;
@@ -3392,6 +3395,7 @@ a.post-thumbnail:hover {
 		display: block;
 		height: auto;
 		line-height: 1.0909090909;
+                font-weight: bold;
 	}
 
 	.primary-navigation ul ul ul {
@@ -3400,20 +3404,20 @@ a.post-thumbnail:hover {
 	}
 
 	.primary-navigation ul ul a {
-		padding: 18px 12px;
+		padding: 15px 12px;
 		white-space: normal;
 		width: 176px;
 	}
 
 	.primary-navigation li:hover > a,
 	.primary-navigation li.focus > a {
-		background-color: #24890d;
-		color: #fff;
+		background-color: #a1a1a1;
+		color: #000;
 	}
 
 	.primary-navigation ul ul a:hover,
 	.primary-navigation ul ul li.focus > a {
-		background-color: #41a62a;
+		background-color: #f6f6f6;
 	}
 
 	.primary-navigation ul li:hover > ul,
