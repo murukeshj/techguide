@@ -208,12 +208,12 @@ p {
 	margin-bottom: 24px;
 }
 
-code,
+/* code, pre */
 kbd,
 tt,
 var,
-samp,
-pre {
+samp
+ {
 	font-family: monospace, serif;
 	font-size: 15px;
 	-webkit-hyphens: none;
@@ -223,7 +223,7 @@ pre {
 	line-height: 1.6;
 }
 
-pre {
+/*pre {
 	border: 1px solid rgba(0, 0, 0, 0.1);
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing:    border-box;
@@ -235,6 +235,57 @@ pre {
 	white-space: pre;
 	white-space: pre-wrap;
 	word-wrap: break-word;
+}*/
+
+code,pre{
+	padding:0 3px 2px;
+	font-family:Monaco,Menlo,Consolas,"Courier New",monospace;
+	font-size:11px;
+	color:#333;
+	-webkit-border-radius:3px;
+	-moz-border-radius:3px;
+	border-radius:3px
+}
+
+code{
+	padding:2px 4px;
+	color:#d14;
+	background-color:#f7f7f9;
+	border:1px solid #e1e1e8
+}
+
+pre{
+	display:block;
+	padding:9.5px;
+	margin:0 0 10px;
+	font-size:12px;
+	line-height:20px;
+	word-break:break-all;
+	word-wrap:break-word;
+	white-space:pre;
+	white-space:pre-wrap;
+	background-color:#f5f5f5;
+	border:1px solid #ccc;
+	border:1px solid rgba(0,0,0,0.15);
+	-webkit-border-radius:0;
+	-moz-border-radius:0;
+	border-radius:0
+}
+
+pre.prettyprint{
+	margin-bottom:20px
+}
+
+pre code{
+	padding:0;
+	color:inherit;
+	background-color:transparent;
+	border:0
+}
+
+.pre-scrollable{
+	max-height:340px;
+	overflow-y:scroll
 }
 
 blockquote,
@@ -507,7 +558,7 @@ button,
 input[type="button"],
 input[type="reset"],
 input[type="submit"] {
-	background-color: #24890d;
+	background-color: #000000;
 	border: 0;
 	border-radius: 2px;
 	color: #fff;
@@ -527,7 +578,7 @@ input[type="reset"]:hover,
 input[type="reset"]:focus,
 input[type="submit"]:hover,
 input[type="submit"]:focus {
-	background-color: #41a62a;
+	background-color: #EE3224;
 	color: #fff;
 }
 
@@ -805,7 +856,7 @@ span + .edit-link:before,
 
 .site {
 	background-color: #fff;
-	max-width: 1260px;
+	max-width: 100%;
 	position: relative;
 }
 
@@ -832,7 +883,7 @@ span + .edit-link:before,
 
 .site-header {
 	background-color: #363B3F;
-	max-width: 1260px;
+	max-width: 100%;
 	position: relative;
 	width: 100%;
 	z-index: 4;
@@ -859,7 +910,7 @@ span + .edit-link:before,
 /* Search in the header */
 
 .search-toggle {
-	background-color: #24890d;
+	background-color: #EE3224;
 	cursor: pointer;
 	float: right;
 	height: 48px;
@@ -870,7 +921,7 @@ span + .edit-link:before,
 
 .search-toggle:hover,
 .search-toggle.active {
-	background-color: #41a62a;
+	background-color: #000;
 }
 
 .search-toggle:before {
@@ -896,7 +947,7 @@ span + .edit-link:before,
 }
 
 .search-box {
-	background-color: #41a62a;
+	background-color: #000;
 	padding: 12px;
 }
 
