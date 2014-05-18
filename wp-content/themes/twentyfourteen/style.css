@@ -980,20 +980,20 @@ span + .edit-link:before,
 }
 
 .site-navigation a {
-	color: #fff;
+	color: #333;
 	display: block;
 	text-transform: uppercase;
 }
 
 .site-navigation a:hover {
-	color: #41a62a;
+	color: #EE3224;
 }
 
 .site-navigation .current_page_item > a,
 .site-navigation .current_page_ancestor > a,
 .site-navigation .current-menu-item > a,
 .site-navigation .current-menu-ancestor > a {
-	color: #55d737;
+	color: #EE3224;
 	font-weight: 900;
 }
 
@@ -1012,7 +1012,7 @@ span + .edit-link:before,
 }
 
 .primary-navigation .nav-menu {
-	border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+	border-bottom: 1px solid #dfdfdf;
 	display: none;
 }
 
@@ -3386,7 +3386,7 @@ a.post-thumbnail:hover {
 	.site-navigation li .current_page_ancestor > a,
 	.site-navigation li .current-menu-item > a,
 	.site-navigation li .current-menu-ancestor > a {
-		color: #fff;
+		color: #EE3224;
 	}
 
 	/* Primary Navigation */
@@ -3396,6 +3396,7 @@ a.post-thumbnail:hover {
 		font-size: 11px;
 		margin: 0 1px 0 -12px;
 		padding: 0;
+                color: #333;
 		text-transform: uppercase;
 	}
 
@@ -3431,8 +3432,11 @@ a.post-thumbnail:hover {
 	}
 
 	.primary-navigation ul ul {
-		background-color: #a1a1a1;
-                box-shadow: 0 2px 2px rgba(0, 0, 0, 0.45);
+		background-color: #fff; /* #a1a1a1; */
+                box-shadow: 0px 1px 20px 0px rgba(0,0,0,0.25);
+                min-width: 12em;
+                color: #000;
+                /* box-shadow: 0 2px 2px rgba(0, 0, 0, 0.45); */
 		float: left;
 		margin: 0;
 		position: absolute;
@@ -3446,7 +3450,8 @@ a.post-thumbnail:hover {
 		display: block;
 		height: auto;
 		line-height: 1.0909090909;
-                font-weight: bold;
+                font-weight: normal;
+                border-bottom:1px solid #dfdfdf;
 	}
 
 	.primary-navigation ul ul ul {
@@ -3458,17 +3463,27 @@ a.post-thumbnail:hover {
 		padding: 15px 12px;
 		white-space: normal;
 		width: 176px;
+                color: #333 !important;
 	}
 
 	.primary-navigation li:hover > a,
 	.primary-navigation li.focus > a {
-		background-color: #a1a1a1;
-		color: #000;
+/*		background-color: #a1a1a1; 
+		color: #000;*/
+        background:#fff; color:#333;-moz-transition: border-color 0.25s ease-in-out, background-color 0.25s ease-in-out;
+        -webkit-transition: border-color 0.25s ease-in-out, background-color 0.25s ease-in-out;
+        -o-transition: border-color 0.25s ease-in-out, background-color 0.25s ease-in-out;
+        -ms-transition: border-color 0.25s ease-in-out, background-color 0.25s ease-in-out;
+        transition: border-color 0.25s ease-in-out, background-color 0.25s ease-in-out; opacity:1;
+
 	}
 
 	.primary-navigation ul ul a:hover,
 	.primary-navigation ul ul li.focus > a {
-		background-color: #f6f6f6;
+                color:#df7366;	
+                background:#f8f8f8; 
+                border-bottom: 2px solid #EE3224;
+		/* background-color: #f6f6f6; */
 	}
 
 	.primary-navigation ul li:hover > ul,
