@@ -528,3 +528,23 @@ if ( ! class_exists( 'Featured_Content' ) && 'plugins.php' !== $GLOBALS['pagenow
 // return $output . '<a style="font-size:12px;" href="'. get_permalink($post->ID) . '"> Read more...</a>';
 //}
 //add_filter('the_excerpt', 'excerpt_read_more_link');
+
+add_filter( 'the_content', 'add_related_posts_after_post_content' );
+function add_related_posts_after_post_content( $content ) {
+ 
+    //check if it's a single post page.
+    if ( is_single() ) {
+ 
+        // check if we're inside the main loop
+        if ( in_the_loop() && is_main_query() ) {
+ 
+            // add your own attributes here (between the brackets [ ... ])
+            $shortcode = '[related_posts_by_tax posts_per_page="6" format="links" title="Check out few more related contents below." before_title="<strong>" after_title="</strong></br></br>"]';
+ 
+            // add the shortcode to the content
+            $content .= do_shortcode( $shortcode );
+        }
+    }
+ 
+    return $content;
+}
