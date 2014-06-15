@@ -2280,6 +2280,7 @@ a.post-thumbnail:hover {
 .widget input[type="reset"],
 .widget input[type="submit"] {
 	background-color: #24890d;
+        color: #fff;
 	border: 0;
 	font-size: 12px;
 	padding: 5px 15px 4px;
