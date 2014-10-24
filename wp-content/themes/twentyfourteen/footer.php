@@ -12,7 +12,7 @@
 
 		</div><!-- #main -->
 
-		<footer id="colophon" class="site-footer" role="contentinfo">
+		<footer id="colophon" class="site-footer" style="background-color: #e1e2e3;" role="contentinfo">
 
 			<?php get_sidebar( 'footer' ); ?>
 
