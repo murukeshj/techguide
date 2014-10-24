@@ -231,7 +231,9 @@ function twentyfourteen_font_url() {
 function twentyfourteen_scripts() {
 	// Add Lato font, used in the main stylesheet.
 	wp_enqueue_style( 'twentyfourteen-lato', twentyfourteen_font_url(), array(), null );
-
+        wp_register_style('tf-opensans', 'http://fonts.googleapis.com/css?family=Open+Sans:400,600,300');
+        wp_enqueue_style( 'tf-opensans');
+        
 	// Add Genericons font, used in the main stylesheet.
 	wp_enqueue_style( 'genericons', get_template_directory_uri() . '/genericons/genericons.css', array(), '3.0.2' );
 

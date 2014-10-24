@@ -2077,7 +2077,7 @@ a.post-thumbnail:hover {
 /* Secondary */
 
 #secondary {
-        font-family: verdana;
+        font-family: 'Open Sans',verdana;
 	background-color: #000;
 	border-top: 1px solid #000;
 	border-bottom: 1px solid rgba(255, 255, 255, 0.2);
@@ -3675,7 +3675,7 @@ a.post-thumbnail:hover {
 		float: left;
 		margin: 0 0 0 -100%;
 		min-height: 100vh;
-/*		width: 122px;*/
+		width: 122px;
 	}
 
 	.primary-sidebar {
